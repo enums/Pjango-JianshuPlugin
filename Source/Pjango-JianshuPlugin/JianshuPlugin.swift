@@ -28,10 +28,10 @@ open class JianshuPlugin: PCTimerPlugin {
         let url = CURL.init(url: "http://www.jianshu.com/p/457922e0676c")
         let (_, _, bytes) = url.performFully()
         guard let html = String.init(bytes: bytes, encoding: .utf8) else {
-            continue
+            return
         }
         guard let article = buildJianshuArticle(html: html) else {
-            continue
+            return
         }
         print(article)
     }
