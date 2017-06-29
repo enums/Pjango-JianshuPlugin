@@ -24,7 +24,7 @@ open class JianshuPlugin: PCTimerPlugin {
         }
     }
     
-    fileprivate func reloadJianshu() {
+    open func reloadJianshu() {
         let url = CURL.init(url: "http://www.jianshu.com/p/457922e0676c")
         let (_, _, bytes) = url.performFully()
         guard let html = String.init(bytes: bytes, encoding: .utf8) else {
@@ -36,7 +36,7 @@ open class JianshuPlugin: PCTimerPlugin {
         print(article)
     }
 
-    fileprivate func buildJianshuArticle(html: String) -> JSArticle? {
+    open func buildJianshuArticle(html: String) -> JSArticle? {
         guard let jsonBegin = html.range(of: "<script type=\"application/json\" data-name=\"page-data\">")?.upperBound else {
             return nil
         }
