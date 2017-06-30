@@ -9,30 +9,28 @@
    <img src="https://img.shields.io/badge/License-Apache-lightgrey.svg?style=flat">
 </p>
 
-Jianshu data support for [Pjango](https://github.com/enums/pjango).
+适用于 [Pjango](https://github.com/enums/pjango) 的简书文章爬取组件。
 
-Can get read & love count from Jianshu by url.
+## 使用方法
 
-## Usage
-
-- Clone this repo.
-- macOS: Use Swift Package Manager to gen a xcodeproj:
+- 克隆此仓库
+- macOS: 使用下面的命令生成 Xcode 工程进行编译:
 
 ```bash
 $ swift package generate-xcodeproj
 ```
 
-- Linux: Use Swift Package Manager to compiling:
+- Linux: 使用`Swift Package Manager`编译:
 
 ```bash
 $ swift build
 ```
 
 
-## More Component
+## 更多组件
 
-See: [https://github.com/enums/pjango](https://github.com/enums/pjango)
+请参考: [https://github.com/enums/pjango](https://github.com/enums/pjango)
 
-## Contact
+## 联系我
 
-Mail me: [enum@enumsblog.com](enum@enumsblog.com)
+发邮件给我: [enum@enumsblog.com](mailto:enum@enumsblog.com)
